@@ -1,14 +1,14 @@
-import './App.css';
+import './App.scss'
+import Content from './Content'
+import drawers from './images/drawers.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          Learn React
-      </header>
+    <div className='wrapper'>
+      <div className='img-wrapper'>
+        <img src={drawers} alt='drawer' />
+      </div>
+      <Content />
     </div>
   );
 }

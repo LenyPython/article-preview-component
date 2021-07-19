@@ -1,0 +1,70 @@
+
+$veryDarkGrayishBlue: hsl(217,19%,35%);
+$desaturatedDarkBlue: hsl(214,17%,51%);
+$grayishBlue: hsl(212,23%,69%);
+$lightGrayishBlue: hsl(210,46%,95%);
+
+body {
+	background: $lightGrayishBlue;
+	color: $veryDarkGrayishBlue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vw;
+	min-height:100vh;
+	font-size: 13px;
+	font-family: 'Manrope', sans-serif;
+}
+div.wrapper {
+	display:flex;
+	align-items: center;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 5px 25px 30px $grayishBlue;
+	& > .main {
+		height: 100%;
+		width: 600px;
+		display:flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		padding: 50px;
+	}
+	& > .main > h1 {
+		font-size:2em;
+		font-weight: 700;
+	}
+	& > .main > p {
+		font-size: 1em;
+		color: $desaturatedDarkBlue;
+	}
+}
+.img-wrapper {
+	width: 585px;
+	height:auto;
+	overflow: hidden;
+}
+.personal-wrapper {
+	width:100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	& > .contact {
+		& > img{
+			transform: scale(40%);
+		}
+	}
+	& > div > img {
+		border-radius: 50%;
+		width: 55px;
+		height: auto;
+		float: left;
+	}
+	& > div > h2 {
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	& > div > p {
+		font-size: 1em;
+		color: $desaturatedDarkBlue;
+	}
+}
