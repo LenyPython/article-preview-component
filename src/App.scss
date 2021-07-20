@@ -17,9 +17,12 @@ body {
 }
 p{
 	margin: 0;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $desaturatedDarkBlue;
 }
 h1{
-	margin: 1em 0;
+	margin: 0 0 1em 0;
 }
 div.wrapper {
 	height: 400px;
@@ -39,10 +42,6 @@ div.wrapper {
 		font-size:2em;
 		font-weight: 700;
 	}
-	& > .main > p {
-		font-size: 1em;
-		color: $desaturatedDarkBlue;
-	}
 }
 .img-wrapper {
 	width: 400px;
@@ -58,9 +57,10 @@ div.wrapper {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	& > .contact {
+	& > .contact { 
+		transform: translateX(200%);
 		& > img{
-			transform: scale(150%) translateX(200%);
+			transform: scale(150%);
 
 		}
 	}
@@ -84,5 +84,39 @@ div.wrapper {
 	& > div > p {
 		font-size: 1em;
 		color: $desaturatedDarkBlue;
+	}
+}
+#share{
+	&::before{
+		content: '';
+		background: $veryDarkGrayishBlue;
+		transform: rotate(45deg);
+		width: 25px;
+		height:25px;
+		position:absolute;
+		bottom:-12px;
+		left: 50%;
+
+	}
+	*{
+		margin: 10px;
+	}
+	position:  absolute;
+	width: 300px;
+	height: 60px;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: $veryDarkGrayishBlue;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2{
+		color: $grayishBlue;
+		text-transform: uppercase;
+		font-size: 1.1em;
+		font-weight: 400;
+		letter-spacing: 5px;
 	}
 }
