@@ -24,11 +24,10 @@ p{
 h1{
 	margin: 0 0 1em 0;
 }
-div.wrapper {
+.wrapper {
 	height: 400px;
 	display:flex;
 	border-radius: 10px;
-	overflow: hidden;
 	box-shadow: 5px 25px 30px $grayishBlue;
 	& > .main {
 		width: 450px;
@@ -47,6 +46,7 @@ div.wrapper {
 	width: 400px;
 	height: 400px;
 	overflow: hidden;
+	border-radius: 10px 0 0 10px;
 	img {
 		width: 500px;
 		height: auto;
@@ -58,7 +58,7 @@ div.wrapper {
 	justify-content: space-between;
 	align-items: center;
 	& > .contact { 
-		transform: translateX(200%);
+		transform: translateX(100%);
 		& > img{
 			transform: scale(150%);
 
@@ -86,17 +86,30 @@ div.wrapper {
 		color: $desaturatedDarkBlue;
 	}
 }
-#share{
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: yellow url('/images/icon-share.svg') no-repeat center;
+	background-size: 60%;
+}
+	.clicked {
+		mix-blend-mode: multiply;
+	}
+.share{
 	&::before{
 		content: '';
 		background: $veryDarkGrayishBlue;
-		transform: rotate(45deg);
+		transform: translateX(-50%) rotate(45deg);
 		width: 25px;
 		height:25px;
 		position:absolute;
 		bottom:-12px;
 		left: 50%;
-
+		z-index:-1;
 	}
 	*{
 		margin: 10px;
