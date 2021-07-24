@@ -2,6 +2,7 @@ import React from 'react'
 import fb from './images/icon-facebook.svg'
 import pin from './images/icon-pinterest.svg'
 import twitter from './images/icon-twitter.svg'
+import arrow from './images/icon-share.svg'
 
 const Contact = () => {
 
@@ -15,6 +16,7 @@ const Contact = () => {
 
   return (
     <div className='contact' onClick={handleClick}>
+      <img src={arrow} alt='click arrow' />
       <div className='share'>
         <h2>share</h2>
         <img src={fb} alt='fb-icon' />
