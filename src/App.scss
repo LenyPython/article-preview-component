@@ -75,8 +75,19 @@ h1{
 }
 
 @media(max-width: 1050px){
+p{
+	margin: 0;
+	font-size: 1em;
+	font-weight: 400;
+	color: $desaturatedDarkBlue;
+}
+h1{
+	font-size: 1.2rem;
+	margin: 0 0 1em 0;
+}
 .wrapper {
 	width: 85vw;
+	height: unset;
 	display:flex;
 	flex-flow: column;
 	border-radius: 10px;
@@ -91,6 +102,12 @@ h1{
 		width: 100%;
 		height: auto;
 	}
+}
+.personal-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 }
