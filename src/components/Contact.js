@@ -1,8 +1,9 @@
 import React from 'react'
-import fb from './images/icon-facebook.svg'
-import pin from './images/icon-pinterest.svg'
-import twitter from './images/icon-twitter.svg'
-import arrow from './images/icon-share.svg'
+import './contact.scss'
+import fb from '../images/icon-facebook.svg'
+import pin from '../images/icon-pinterest.svg'
+import twitter from '../images/icon-twitter.svg'
+import arrow from '../images/icon-share.svg'
 
 const Contact = () => {
 

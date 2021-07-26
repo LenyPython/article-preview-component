@@ -1,5 +1,6 @@
-import React from 'react';
-import Personal from './Personal';
+import React from 'react'
+import './content.scss'
+import Personal from './Personal'
 
 const Content = ({title, content, name, date, avatar}) => {
   return (

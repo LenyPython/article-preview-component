@@ -1,5 +1,5 @@
 import './App.scss'
-import Content from './Content'
+import Content from './components/Content'
 import drawers from './images/drawers.jpg'
 import avatar from './images/avatar-michelle.jpg'
 
