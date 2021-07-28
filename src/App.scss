@@ -44,13 +44,6 @@ h1{
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	& > .contact { 
-		transform: translateX(100%);
-		& > img{
-			transform: scale(150%);
-
-		}
-	}
 }
 #avatar-wrapper {
 	width:100%;
@@ -82,12 +75,12 @@ p{
 	color: $desaturatedDarkBlue;
 }
 h1{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin: 0 0 1em 0;
 }
 .wrapper {
 	width: 85vw;
-	height: unset;
+	height: initial;
 	display:flex;
 	flex-flow: column;
 	border-radius: 10px;
@@ -104,6 +97,7 @@ h1{
 	}
 }
 .personal-wrapper {
+	transform: rotate(0deg);
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
