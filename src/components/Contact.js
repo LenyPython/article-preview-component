@@ -9,7 +9,6 @@ const Contact = () => {
     let shareDiv = document.querySelector('.share');
     contactArrow.classList.toggle('clicked');
     shareDiv.classList.toggle('visible');
-
   };
 
   return (
