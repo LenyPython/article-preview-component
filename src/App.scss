@@ -24,6 +24,7 @@ h1{
 	margin: 0 0 1em 0;
 }
 .wrapper {
+	min-width: 340px;
 	height: 400px;
 	display:flex;
 	border-radius: 10px;
@@ -38,12 +39,6 @@ h1{
 		width: 500px;
 		height: auto;
 	}
-}
-.personal-wrapper {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
 }
 #avatar-wrapper {
 	width:100%;
@@ -95,13 +90,6 @@ h1{
 		width: 100%;
 		height: auto;
 	}
-}
-.personal-wrapper {
-	transform: rotate(0deg);
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
 }
 
 }

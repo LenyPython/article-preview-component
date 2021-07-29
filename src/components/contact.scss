@@ -22,67 +22,7 @@ $desaturatedDarkBlue: hsl(214,17%,51%);
 		filter: sepia(100%) brightness(100%);
 	}
 }
-.share{
-	&::before{
-		content: '';
-		background: $veryDarkGrayishBlue;
-		transform: translateX(-50%) rotate(45deg);
-		width: 25px;
-		height:25px;
-		position:absolute;
-		bottom:-12px;
-		left: 50%;
-		z-index:-1;
-	}
-	*{
-		margin: 10px;
-	}
-	position: absolute;
-	width: 0;
-	height: 0;
-	transform: translate(106%, -120%);
-	background: $veryDarkGrayishBlue;
-	border-radius: 10px;
-	display: none;
-	justify-content: center;
-	align-items: center;
-	h2{
-		color: $grayishBlue;
-		text-transform: uppercase;
-		font-size: 1.1em;
-		font-weight: 400;
-		letter-spacing: 5px;
-	}
-}
-.visible {
-	width: 300px !important;
-	height: 60px !important;
-	display: flex !important;
-}
 @media(max-width:1050px){
-.share{
-	all:initial;
-	position:  fixed;
-	bottom: 0;
-	left: -25px;
-	display: flex;
-	align-items: center;
-	height: 0;
-	width: 0;
-	overflow: hidden;
-	transform: translateY(130%);
-	background: $veryDarkGrayishBlue;
-	transition: all .4s;
-	border-radius: 0 0 10px 10px;
-	&::before{
-		all:unset;
-	}
-	}
-.visible {
-	height: 100%;
-	width: calc(100% + 40px) !important;
-	transform: initial;
-}
 .contact{
 	all: initial;
 }

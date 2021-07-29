@@ -1,0 +1,20 @@
+
+.personal-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media(max-width:1050px){
+
+.personal-wrapper {
+	transform: rotate(0deg);
+	display: flex;
+	box-sizing: border-box;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+}
